@@ -1,0 +1,86 @@
+mode: development # Change to "production" before generating a production deployment
+media_root: media # Relative path from content folder.
+media_url: media # URL where the media files are served from.
+plugins:
+    - hyde.ext.plugins.meta.MetaPlugin
+    - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+    - hyde.ext.plugins.syntext.SyntextPlugin
+    - hyde.ext.plugins.textlinks.TextlinksPlugin
+context:
+    data:
+        site_title: Jeremy Blanchard
+        author:
+            name: Jeremy Blanchard
+            url: "http://blanchardjeremy.com"
+        google_analytics_id: UA-1854982-5
+        home_url: index.html
+
+        menu:
+            - title: JB
+              url: "#header"
+              active: true
+            - title: About
+              url: "#about"
+            - title: Current Projects
+              url: "#projects"
+            - title: Misc
+              url: "#other"
+            - title: Past
+              url: "#past"
+
+        profiles:
+            - title: Facebook
+              url: "http://www.facebook.com/jeremy.blanchard"
+            - title: Delicious
+              url: "http://delicious.com/auzigog"
+            - title: Last.fm
+              url: "http://www.last.fm/user/eyeRmonkey"
+            - title: Twitter
+              url: "http://twitter.com/auzigog"
+            - title: Email
+              url: "mailto:blanchard.jeremy@gmail.com"
+            - title: Book a meeting
+              url: "http://auzigog.youcanbook.me"
+            - title: GitHub
+              url: "http://github.com/auzigog/"
+            - title: Flickr
+              url: "http://www.facebook.com/jeremy.blanchard"
+            - title: Facebook
+              url: "http://www.facebook.com/jeremy.blanchard"
+            - title: LinkedIn
+              url: "http://www.linkedin.com/in/jeremytblanchard"
+
+        projects:
+            - title: Rally Room
+              url: "http://rallyroom.net/"
+              description: "A hub of tasks, communication, and tools for teams that are changing the world. This project receives 80% of my energy. I &hearts; it."
+
+            - title: Dubstep for Dinner
+              url: "http://dubstepfordinner.tumblr.com/"
+              description: "Cooking+Music blog. Filthy tunes and tasty bites."
+
+            - title: DJ Strategy
+              url: "http://www.facebook.com/StrategyDJ"
+              description: "Making the floor bounce with wobble bass. I DJ dubstep+top40 dance parties in Eugene. Very amateur. Very dancable."
+
+            - title: Organizing Change
+              url: "http://organizingchange.org/"
+              description: "Organizing for social change & changing the way we organize. (Stalled for now, more soon)"
+
+        other:
+            - title: Quote Book
+              url: "http://blanchardjeremy.com/quotes/"
+              description: "Wisdom and Wit. A quick Drupal 7 site I made to store all of my favorite quotations"
+
+            - title: Rolling in the Mashups
+              url: "http://rollinginthemashups.com/"
+              description: "Quick site I rolled out with my partners-in-crime, <a href=\"http://www.zstarmac.com/\">Zach</a> and <a href=\"http://kaisdavis.com/\">Kai</a>."
+
+            - title: Elementary Egypt
+              url: "http://elementaryegypt.tumblr.com/"
+              description: "The worst fonts ever made - Comic Sans and Papyrus. A tumblog documenting my encounters with these evil typefaces."
+
+        past:
+            - title: Climate Justice League
+              url: "http://climatejusticeleague.org/"
+              description: "I co-founded this group at the UO to help create more strategic environmental justice organizing in the area and empower more student leaders."

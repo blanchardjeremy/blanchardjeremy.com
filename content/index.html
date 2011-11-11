@@ -1,0 +1,65 @@
+---
+title: Jeremy Blanchard
+subtitle: Activist &bull; Hacker &bull; Hugger
+description: Test description
+---
+
+{% extends "columns.j2" %}
+
+
+{% macro project_list(list) -%}
+<ul class="list">
+{% for item in list -%}
+    <li><a href="{{ item.url }}">{{ item.title }}</a>
+        {% if item.description %}
+        <br>
+        <span class="description">
+            {{ item.description }}
+        </span>
+        {% endif %}
+    </li>
+{%- endfor %}
+</ul>
+{%- endmacro %}
+
+{% block main %}
+<div class="page-header"><h2 id="about">About</h2></div>
+
+Hi, friend! I'm **Jeremy**.
+
+I am a **community organizer** in the [youth climate movement](http://www.wearepowershift.org/) and [#OccupyTogether movement](http://www.occupytogether.org/).
+My passion is building web apps for activists and I spend most of my time developing **[Rally Room](http://rallyroom.net)**, an online team tool belt for organizers.
+I also have a [day job](http://www.concentricsky.com/) building Django and Drupal web apps.
+
+I recently graduated from the University of Oregon with a degree in environmental studies and a minor in computer science.
+
+<div class="page-header"><h2 id="projects">Previous Projects</h2></div>
+
+{{ project_list(projects) }}
+
+
+<div class="page-header"><h2 id="other">Misc</h2></div>
+{{ project_list(other) }}
+
+
+<div class="page-header"><h2 id="past">Past Projects</h2></div>
+{{ project_list(past) }}
+
+
+{% endblock main %}
+
+
+{% block sidebar %}
+<div style="text-align: center" class="media-grid">
+
+    <img src="http://gravatar.com/avatar/d041d96ffc0a40b34cff3141860dd5dd?s=160" alt="Jeremy Blanchard" class="border">
+</div>
+
+<h3>Find Me</h3>
+<ul id="profiles">
+{% for profile in profiles %}
+    <li><a href="{{ profile.url }}">{{ profile.title }}</a></li>
+{% endfor %}
+</ul>
+    
+{% endblock sidebar %}
