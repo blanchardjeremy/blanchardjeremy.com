@@ -30,6 +30,15 @@ body {
 }
 
 
+section {
+    padding-top: 40px;
+}
+
+section#about {
+    padding-top: 0;
+}
+
+
 a {
     color: #682321;
 }
@@ -62,8 +71,14 @@ a:hover {
 
 footer {
     color: #ccc;
+    border-top: 0;
 }
 footer a {
     color: #ccc;
     text-decoration: underline;
+}
+
+
+.logo_item {
+    font-weight: bold;
 }

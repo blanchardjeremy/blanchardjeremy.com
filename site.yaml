@@ -6,6 +6,11 @@ plugins:
     - hyde.ext.plugins.auto_extend.AutoExtendPlugin
     - hyde.ext.plugins.syntext.SyntextPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
+
+publisher:
+    sftp:
+        type: hyde.ext.publishers.pyfs.PyFS
+        url: "ftp://blanchardjeremy.com:%(password)s@blanchardjeremy.com/domains/blanchardjeremy.com/html/"
 context:
     data:
         site_title: Jeremy Blanchard
@@ -16,9 +21,6 @@ context:
         home_url: index.html
 
         menu:
-            - title: JB
-              url: "#header"
-              active: true
             - title: About
               url: "#about"
             - title: Current Projects
@@ -49,6 +51,8 @@ context:
               url: "http://www.facebook.com/jeremy.blanchard"
             - title: LinkedIn
               url: "http://www.linkedin.com/in/jeremytblanchard"
+            - title: Skype
+              url: "skype:auzigog"
 
         projects:
             - title: Rally Room

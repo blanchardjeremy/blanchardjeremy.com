@@ -35,11 +35,11 @@
     {% block endhead %}{% endblock endhead %}
   </head>
 
-  <body class="{{ resource.meta.id if resource.meta.id else resource.slug }}">
+  <body class="{{ resource.meta.id if resource.meta.id else resource.slug }}" id="top">
 
     {% block body %}
 
-    <div class="container" id="top">
+    <div class="container">
       {% block container %}
 
       <div class="content">

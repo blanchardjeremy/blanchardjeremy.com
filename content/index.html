@@ -10,7 +10,7 @@ description: Test description
 {% macro project_list(list) -%}
 <ul class="list">
 {% for item in list -%}
-    <li><a href="{{ item.url }}">{{ item.title }}</a>
+    <li><strong><a href="{{ item.url }}">{{ item.title }}</a></strong>
         {% if item.description %}
         <br>
         <span class="description">
@@ -23,8 +23,10 @@ description: Test description
 {%- endmacro %}
 
 {% block main %}
-<div class="page-header"><h2 id="about">About</h2></div>
 
+<section id="about">
+<div class="page-header"><h2>About</h2></div>
+{% filter markdown -%}
 Hi, friend! I'm **Jeremy**.
 
 I am a **community organizer** in the [youth climate movement](http://www.wearepowershift.org/) and [#OccupyTogether movement](http://www.occupytogether.org/).
@@ -32,19 +34,24 @@ My passion is building web apps for activists and I spend most of my time develo
 I also have a [day job](http://www.concentricsky.com/) building Django and Drupal web apps.
 
 I recently graduated from the University of Oregon with a degree in environmental studies and a minor in computer science.
+{%- endfilter %}
+</section>
 
-<div class="page-header"><h2 id="projects">Previous Projects</h2></div>
-
-{{ project_list(projects) }}
-
-
-<div class="page-header"><h2 id="other">Misc</h2></div>
-{{ project_list(other) }}
+<section id="projects">
+    <div class="page-header"><h2>Current Projects</h2></div>
+    {{ project_list(projects) }}
+</section>
 
 
-<div class="page-header"><h2 id="past">Past Projects</h2></div>
-{{ project_list(past) }}
+<section id="other">
+    <div class="page-header"><h2>Misc</h2></div>
+    {{ project_list(other) }}
+</section>
 
+<section id="past">
+    <div class="page-header"><h2>Past Projects</h2></div>
+    {{ project_list(past) }}
+</section>
 
 {% endblock main %}
 
