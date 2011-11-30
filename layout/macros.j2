@@ -1,8 +1,8 @@
 {% macro render_main_menu() -%}
 <ul class="nav">
-<li class="active logo_item"><a href="#top">JB</a></li>
+<li class="{% if resource.url=='index.html' %}active {% endif %}logo_item"><a href="#top">JB</a></li>
 {% for menu_item in menu -%}
-  <li{% if menu_item.url == resource.url or menu_item.active %} class="active"{% endif %}><a href="{{ menu_item.url }}">{{ menu_item.title }}</a></li>
+  <li{% if menu_item.url == '/'+resource.url or (menu_item.url+'/index.html'=='/'+resource.url) %} class="active"{% endif %}><a href="{{ menu_item.url }}">{{ menu_item.title }}</a></li>
 {%- endfor %}
 </ul>
 {%- endmacro %}

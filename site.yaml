@@ -22,13 +22,15 @@ context:
 
         menu:
             - title: About
-              url: "#about"
+              url: "/#about"
             - title: Current Projects
-              url: "#projects"
+              url: "/#projects"
             - title: Misc
-              url: "#other"
+              url: "/#other"
             - title: Past
-              url: "#past"
+              url: "/#past"
+            - title: Meeting
+              url: "/meeting"
 
         profiles:
             - title: Facebook
