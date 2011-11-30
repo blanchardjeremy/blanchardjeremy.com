@@ -1,6 +1,6 @@
 mode: development # Change to "production" before generating a production deployment
 media_root: media # Relative path from content folder.
-media_url: media # URL where the media files are served from.
+media_url: /media # URL where the media files are served from.
 plugins:
     - hyde.ext.plugins.meta.MetaPlugin
     - hyde.ext.plugins.auto_extend.AutoExtendPlugin
@@ -8,7 +8,7 @@ plugins:
     - hyde.ext.plugins.textlinks.TextlinksPlugin
 
 publisher:
-    sftp:
+    default:
         type: hyde.ext.publishers.pyfs.PyFS
         url: "ftp://blanchardjeremy.com:%(password)s@blanchardjeremy.com/domains/blanchardjeremy.com/html/"
 context:

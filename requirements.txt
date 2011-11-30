@@ -5,7 +5,8 @@ Pygments==1.4
 argparse==1.2.1
 commando==0.1.2a
 distribute==0.6.15
-hyde==0.8.4
+-e git://github.com/hyde/hyde.git#egg=hyde
 smartypants==1.6.0.3
 typogrify-hyde==1.0.1a
 wsgiref==0.1.2
+fs==0.4.0
