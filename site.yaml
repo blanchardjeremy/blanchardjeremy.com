@@ -43,8 +43,6 @@ context:
               url: "http://twitter.com/auzigog"
             - title: Email
               url: "mailto:blanchard.jeremy@gmail.com"
-            - title: Book a meeting
-              url: "http://auzigog.youcanbook.me"
             - title: GitHub
               url: "http://github.com/auzigog/"
             - title: Flickr
