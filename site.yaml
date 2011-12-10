@@ -1,4 +1,4 @@
-mode: development # Change to "production" before generating a production deployment
+mode: production # Change to "production" before generating a production deployment
 media_root: media # Relative path from content folder.
 media_url: /media # URL where the media files are served from.
 plugins:
@@ -46,9 +46,7 @@ context:
             - title: GitHub
               url: "http://github.com/auzigog/"
             - title: Flickr
-              url: "http://www.facebook.com/jeremy.blanchard"
-            - title: Facebook
-              url: "http://www.facebook.com/jeremy.blanchard"
+              url: "http://www.flickr.com/photos/eyermonkey/"
             - title: LinkedIn
               url: "http://www.linkedin.com/in/jeremytblanchard"
             - title: Skype
