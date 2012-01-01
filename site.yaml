@@ -6,11 +6,18 @@ plugins:
     - hyde.ext.plugins.auto_extend.AutoExtendPlugin
     - hyde.ext.plugins.syntext.SyntextPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
+    - hyde.ext.plugins.urls.UrlCleanerPlugin
 
 publisher:
     default:
         type: hyde.ext.publishers.pyfs.PyFS
         url: "ftp://blanchardjeremy.com:%(password)s@blanchardjeremy.com/domains/blanchardjeremy.com/html/"
+urlcleaner:
+    index_file_names:
+        - index.html
+    strip_extensions:
+        - html
+    append_slash: false
 context:
     data:
         site_title: Jeremy Blanchard
@@ -29,8 +36,8 @@ context:
               url: "/#other"
             - title: Past
               url: "/#past"
-            - title: Meeting
-              url: "/meeting"
+            - title: Schedule
+              url: "/schedule"
 
         profiles:
             - title: Facebook
@@ -55,7 +62,7 @@ context:
         projects:
             - title: Rally Room
               url: "http://rallyroom.net/"
-              description: "A hub of tasks, communication, and tools for teams that are changing the world. This project receives 80% of my energy. I &hearts; it."
+              description: "Team collaboration tool for activists and organizers. Organizes tasks, meetings, and communication so you can get back to organizing your community. This project receives 80% of my energy. I &hearts; it."
 
             - title: Dubstep for Dinner
               url: "http://dubstepfordinner.tumblr.com/"
