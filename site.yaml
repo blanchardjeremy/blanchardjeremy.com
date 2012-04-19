@@ -60,7 +60,7 @@ context:
               url: "skype:auzigog"
 
         projects:
-            - title: Rally Room
+            - title: RallyRoom
               url: "http://rallyroom.net/"
               description: "Team collaboration tool for activists and organizers. Organizes tasks, meetings, and communication so you can get back to organizing your community. This project receives 80% of my energy. I &hearts; it."
 
