@@ -28,6 +28,8 @@ context:
         home_url: index.html
 
         menu:
+            - title: Blog
+              url: "http://blog.blanchardjeremy.com"
             - title: About
               url: "/#about"
             - title: Current Projects
