@@ -30,20 +30,14 @@ context:
         menu:
             - title: Blog
               url: "http://blog.blanchardjeremy.com"
-            - title: About
-              url: "/#about"
-            - title: Current Projects
-              url: "/#projects"
-            - title: Misc
-              url: "/#other"
-            - title: Past
-              url: "/#past"
             - title: Schedule
               url: "/schedule"
 
         profiles:
             - title: Facebook
               url: "http://www.facebook.com/jeremy.blanchard"
+            - title: LinkedIn
+              url: "http://www.linkedin.com/in/jeremytblanchard"
             - title: Delicious
               url: "http://delicious.com/auzigog"
             - title: Last.fm
@@ -51,47 +45,10 @@ context:
             - title: Twitter
               url: "http://twitter.com/auzigog"
             - title: Email
-              url: "mailto:blanchard.jeremy@gmail.com"
+              url: "mailto:coach@blanchardjeremy.com"
             - title: GitHub
               url: "http://github.com/auzigog/"
             - title: Flickr
               url: "http://www.flickr.com/photos/eyermonkey/"
-            - title: LinkedIn
-              url: "http://www.linkedin.com/in/jeremytblanchard"
             - title: Skype
               url: "skype:auzigog"
-
-        projects:
-            - title: RallyRoom
-              url: "http://rallyroom.net/"
-              description: "Team collaboration tool for activists and organizers. Organizes tasks, meetings, and communication so you can get back to organizing your community. This project receives 80% of my energy. I &hearts; it."
-
-            - title: Dubstep for Dinner
-              url: "http://dubstepfordinner.tumblr.com/"
-              description: "Cooking+Music blog. Filthy tunes and tasty bites."
-
-            - title: DJ Strategy
-              url: "http://www.facebook.com/StrategyDJ"
-              description: "Making the floor bounce with wobble bass. I DJ dubstep+top40 dance parties in Eugene. Very amateur. Very danceable."
-
-            - title: Organizing Change
-              url: "http://organizingchange.org/"
-              description: "Organizing for social change & changing the way we organize. (Stalled for now, more soon)"
-
-        other:
-            - title: Quote Book
-              url: "http://blanchardjeremy.com/quotes/"
-              description: "Wisdom and Wit. A quick Drupal 7 site I made to store all of my favorite quotations"
-
-            - title: Rolling in the Mashups
-              url: "http://rollinginthemashups.com/"
-              description: "Quick site I rolled out with my partners-in-crime, <a href=\"http://www.zstarmac.com/\">Zach</a> and <a href=\"http://kaisdavis.com/\">Kai</a>."
-
-            - title: Elementary Egypt
-              url: "http://elementaryegypt.tumblr.com/"
-              description: "The worst fonts ever made - Comic Sans and Papyrus. A tumblog documenting my encounters with these evil typefaces."
-
-        past:
-            - title: Climate Justice League
-              url: "http://climatejusticeleague.org/"
-              description: "I co-founded this group at the UO to help create more strategic environmental justice organizing in the area and empower more student leaders."

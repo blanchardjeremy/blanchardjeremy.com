@@ -1,14 +1,14 @@
 ---
 title: Jeremy Blanchard
-subtitle: Activist &bull; Hacker &bull; Hugger
-description: Test description
+subtitle: Life & Leadership Coach for Changemakers
+description: Life & Leadership coach for activists, change-makers, and radicals
 ---
 
 {% extends "columns.j2" %}
 
 
 {% macro project_list(list) -%}
-<ul class="list">
+<ul class="list" xmlns="http://www.w3.org/1999/html">
 {% for item in list -%}
     <li><strong><a href="{{ item.url }}">{{ item.title }}</a></strong>
         {% if item.description %}
@@ -25,33 +25,28 @@ description: Test description
 {% block main %}
 
 <section id="about">
-<div class="page-header"><h2>About</h2></div>
+<div class="page-header"><h2>What is Life Coaching?</h2></div>
 {% filter markdown -%}
 Hi, friend! I'm **Jeremy**.
 
-My passion is building web apps for activists and I spend most of my time developing **[RallyRoom](http://rallyroom.net)**, an online team tool belt for organizers.
-I am a **community organizer** in the [youth climate movement](http://www.wearepowershift.org/).
-I also have a [day job](http://www.concentricsky.com/) building Django web apps.
+I want to change the world.
 
-I recently graduated from the University of Oregon with a degree in environmental studies and a minor in computer science.
+I want to do that by supporting the people who are making change.
+
+Have you experienced taking a step back from going for a goal that really speaks to your heart?
+Like leaving your day job to make money in a way that makes a bigger difference in the world?
+
+Life coaching is a set of tools that can help you go past the point where you often stop yourself.
+As a coach, I support you in becoming clear on what is most important to you, often when there are competing priorities.
+And once your priorities are clear, we'll work together to bring transform your goals from visions into reality.
+
+Are you interested in learning a bit more about coaching and how it might be supportive in your situation?
+If so, email me saying "Hi!" at <a href="mailto:coach@blanchardjeremy.com?subject=Coaching Interest!&body=Hi there! I'd love to chat more about coaching!">coach@blanchardjeremy.com</a>.
+
+<br>
+<a href="mailto:coach@blanchardjeremy.com?subject=Coaching Interest!&body=Hi there! I'd love to chat more about coaching!" class="btn success">Email me to learn more about coaching</a>
+
 {%- endfilter %}
-</section>
-
-<section id="projects">
-    <div class="page-header"><h2>Current Projects</h2></div>
-    {{ project_list(projects) }}
-</section>
-
-
-<section id="other">
-    <div class="page-header"><h2>Misc</h2></div>
-    {{ project_list(other) }}
-</section>
-
-<section id="past">
-    <div class="page-header"><h2>Past Projects</h2></div>
-    {{ project_list(past) }}
-</section>
 
 {% endblock main %}
 

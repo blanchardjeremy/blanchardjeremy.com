@@ -49,6 +49,7 @@ a:hover {
 .main p, .main ul {
     font-size: 1.2em;
     line-height: 1.3em;
+    margin-bottom: 15px;
 }
 
 .list li {
