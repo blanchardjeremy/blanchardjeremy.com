@@ -1,9 +1,3 @@
----
-title: Jeremy Blanchard Life Coaching
-description: Life and leadership coaching from coach-in-training Jeremy Blanchard
----
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +82,7 @@ description: Life and leadership coaching from coach-in-training Jeremy Blanchar
     .box h3 {
         font-weight: 600;
     }
-    .box p {
+    .box p, .box li {
         font-size: 1.2em;
         line-height: 1.4em;
     }
@@ -105,35 +99,38 @@ description: Life and leadership coaching from coach-in-training Jeremy Blanchar
 <body class=" marketing  home" id="">
 
 
-                <div class="navbar_wrapper">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="navbar-inner">
-                        <div class="container">
-                            <a href="/" class="brand">Jeremy Blanchard Coaching</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+{#        <div class="navbar_wrapper">#}
+{#            <div class="container">#}
+{#                <nav class="navbar">#}
+{#                    <div class="navbar-inner">#}
+{#                        <div class="container">#}
+{#                            <a href="#" class="brand">Jeremy Blanchard Coaching</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </nav>#}
+{#            </div>#}
+{#        </div>#}
 
 
     <div class="container">
         <div class="row">
             <div class="feature span10">
-                <h2 class="motto">Have a view into <strong>your teams</strong> and give them the support they need</h2>
-                <h3 class="subheader">Task tracking and accountability for teams of changemakers. A clear picture into the teams for the organizer&ndash;you.</h3>
+                <h2 class="motto">Do you want to live life with more <strong>ease</strong> and <strong>fullfilment</strong>?</h2>
+                <h3 class="subheader">This is YOUR complimentary 60-minute coaching session</h3>
             </div>
         </div>
         <div class="row pitch-wrapper">
             <div class="span5 center">
                 <div class="pitch">
-                    <p>Feeling disconnected from the teams you're working with? See teams drop a lot of tasks? We were too.</p>
-                    <p>We built RallyRoom to be your organization's online personal assistant. It helps teams keep track of their <strong>tasks</strong> and be accountable. By giving them an effective tool to use, you can have a view into their work and <strong>offer support</strong> when needed. Now you can stop messing with spreadsheets and get back to changing the world.</p>
+                    <p>Stop with the struggle. Try coaching to bring your dreams and goals into reality with more focus and ease.</p>
+                    <p>If you’re reading this, you’re entitled to a 60-minute coaching session from Life & Leadership Coach Jeremy Blanchard by phone or Skype, free of charge.</p>
+                    <br>
+                    <p class="alert alert-error">Redeem by <strong>January 31st</strong> at midnight PST</p>
                 </div>
             </div>
             <div class="span5">
-                <img src="/static/img/team_meeting.jpg" class="thumbnail">
+                <img src="{{ media_url('img_gift/jeremy.jpg') }}" class="thumbnail">
+                <p style="clear: both; margin-left: 15em; font-style: italic;">Hi, I'm Jeremy!</p>
             </div>
         </div>
     </div>
@@ -142,14 +139,14 @@ description: Life and leadership coaching from coach-in-training Jeremy Blanchar
         <div class="container">
             <div class="row">
                 <div class="span10">
-                    <h3 class="subheader">Be the <strong>first in line</strong> to try RallyRoom</h3>
-                    <form class="signup-form" enctype="multipart/form-data" method="post" novalidate="novalidate" onsubmit="_gaq.push(['_trackEvent', 'Goals','Interest Signup', 'Pre-Alpha']);mpq.track('Pre-Alpha List Signup');" action="http://rallyroom.wufoo.com/forms/z7x3x5/#public">
+                    <h3 class="subheader">Sign up now for your <strong>free</strong> 60-minute coaching session</h3>
+                    <form class="signup-form" enctype="multipart/form-data" method="post" novalidate="novalidate" onsubmit="_gaq.push(['_trackEvent', 'Goals','Interest Signup', 'Pre-Alpha']);" action="http://coachjeremy.wufoo.com/forms/z7x3p3/#public">
                         <fieldset>
                             <input type="text" value="" name="Field1" class="email span5" placeholder="Your Email Address" spellcheck="false" />
-                            <input type="hidden" id="idstamp" name="idstamp" value="17RpZKatW0e2JYeMrzZcG/mCuZEioxh7rPXFeva0x6E=">
-                            <button type="submit" name="saveForm" id="mc-embedded-subscribe" class="btn btn-large btn-warning">Notify me!</button>
+                            <input type="hidden" id="idstamp" name="idstamp" value="PaOkQ5H6AU8747bOpbrS7Ui6OSlwkJxkGaJeoPJwLvY=">
+                            <button type="submit" name="saveForm" id="mc-embedded-subscribe" class="btn btn-large btn-warning">Get started!</button>
                                                         <br>
-                            <span class="nospam">No spam. We &hearts; you.</span>
+{#                            <span class="nospam">No spam. I &hearts; you.</span>#}
                                                     </fieldset>
                     </form>
                 </div>
@@ -159,40 +156,54 @@ description: Life and leadership coaching from coach-in-training Jeremy Blanchar
 
 
     <div class="container">
-        <h2><strong>RallyRoom</strong> connects teams</h2>
-        <h3 class="subheader">Your organization's online personal assistant.</h3>
+        <h2>What's your sweetest dream?</h2>
+        <h3 class="subheader">I can support you in bringing it into reality!</h3>
 
-        <div class="row">
+        <div class="row" id="questions">
             <div class="span10 box drop-shadow">
                 <div class="row">
-                    <article class="span5 offset1">
-                        <h3>A <strong>view</strong> into all your teams</h3>
-                        <p>When it's your job to support a bunch of teams of changemakers, it can be hard to have a view into their work so you can offer support as needed. RallyRoom gives the teams an effective tool for organizing tasks and meetings, and you instantly get a summary of what they're working on, so you can support them and they can reach out for support from you.
-                        </p>
-                    </article>
-                    <div class="span3">
-                        <i class="icon-first icon-sitemap icon-large pull-right"></i>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="span3 offset1">
-                        <i class="icon-second icon-check icon-large"></i>
-                    </div>
-                    <article class="span5">
-                        <h3>Empower teams to track <strong>tasks</strong> &amp; meetings</h3>
-                        <p>Tasks deserve a good home. A home that's better than a row on a Google Spreadsheet. With RallyRoom, each of your teams' tasks have a place to thrive: they get followed up on, it's easy to know who is doing what, and to communicate about them tasks as they evolve. RallyRoom supports tasks from where they sprout: during meetings. Keep track of meeting reminders, agendas, notes, and task collection.
-                        </p>
+                    <article class="span8 offset1">
+                        <h3>What is a coach?</h3>
+                        <p>A coach is someone who partners with you and supports you in:</p>
+                        <ul>
+                            <li>Shifting your attention away from your worries toward seeing who you really are</li>
+                            <li>Discovering what holds meaning and purpose for you</li>
+                            <li>Creating goals that come alive with meaning and excitement</li>
+                            <li>Bringing your goals into reality with ease, by setting specific goals</li>
+                        </ul>
+                        <p>A coach is not a counselor or therapist, however, a coach could help you see if seeing a mental health professional would be supportive. A coach cannot provide legal, financial, medical, or consultation services, however, a coach could help you see whether to seek support in one of these areas.</p>
                     </article>
                 </div>
                 <div class="row">
-                    <article class="span5 offset1">
-                        <h3>Let your teams <strong>see each other</strong></h3>
-                        <p>In an organization with many teams on-the-ground, it's hard to feel connected and to share hard-won lessons to other people doing the same work. Get a view into other teams and have an open communication channel to share your knowledge and learn from other teams.
+                    <article class="span8 offset1">
+                        <h3>Is coaching for me?</h3>
+                        <p>If you can say “yes” to any of these questions, coaching has something to offer you:</p>
+                        <ul>
+                            <li>Do doubt, worry, and fear consume my energy and hold me back from taking action on things that are important to me?</li>
+                            <li>Do I regularly feel frustrated with money, time, friends, co-workers, etc.?</li>
+                            <li>Do I have a dream for a project, adventure, organization that I haven’t moved on yet?</li>
+                            <li>Am I finding more struggle in my life than there needs to be with you money, time, relationships, creativity, hobbies, work, etc? Is this struggle so familiar that I just think it’s fine because you can “just deal with it”?</li>
+                            <li>Do I know that I’m not bringing my full authentic self to some parts of my life?</li>
+                            <li>Am I wondering what my next big step in life is? Do I have too many options to choose from? Or do I feel like I have no options?</li>
+                        </ul>
+                        <p>Coaching is a good fit for you if you want to turn the frustrating parts of your life into fulfilling parts, and make the sweet parts of your life even sweeter.
                         </p>
                     </article>
-                    <div class="span3">
-                        <i class="icon-third icon-eye-open icon-large pull-right"></i>
-                    </div>
+                </div>
+                <div class="row">
+                    <article class="span8 offset1">
+                        <h3>Who is Jeremy?</h3>
+                        <img src="{{ media_url('img_gift/jeremy.jpg') }}" class="thumbnail span3 pull-right">
+                        <p>I’m a Life & Leadership Coach. I work with you to help you discern your “voice of wisdom” from your doubt and fear conversations that are holding you back from taking action on the things that are most important to you.</p>
+                        <p>As a changemaker, I was pouring all my time into too many projects, not producing the results I wanted, and not enjoying most parts of my life along the way. I kept thinking that if I just put in a bit more energy, I’d have the success I was looking for. Two years ago, I hired a coach and every session we had, each part of my life got easier. I became a trained coach myself so I can bring this powerful support to people who are doing meaningful work in the world.</p>
+                        <p>I have extensive training from <a href="http://acecoachtraining.com/">The Academy for Coaching Excellence</a>, one of the best coach training programs in the country. While I’m in the process of finishing my coach certification, my rates are heavily discounted.</p>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="span8 offset1">
+                        <h3>Am I changemaker?</h3>
+                        <p>If you say you are, then you are! Some examples of changemakers include: activists, radicals, healers, organizers, volunteers, artists, social entrepreneurs, creatives, and anyone who has a dream for a better world (even if you haven’t done anything toward it yet!).</p>
+                    </article>
                 </div>
             </div>
         </div>
@@ -203,12 +214,13 @@ description: Life and leadership coaching from coach-in-training Jeremy Blanchar
         <div class="container">
             <div class="row">
                 <div class="span10">
-                    <h3 class="subheader">Get <strong>notified</strong> when we open the doors to RallyRoom</h3>
-                    <form class="signup-form" enctype="multipart/form-data" method="post" novalidate="novalidate" onsubmit="_gaq.push(['_trackEvent', 'Goals','Interest Signup', 'Pre-Alpha']);mpq.track('Pre-Alpha List Signup');" action="http://rallyroom.wufoo.com/forms/z7x3x5/#public">
+                    <h3 class="subheader">Ready to give coaching a try with a complimentary 60-minute session from Jeremy?</h3>
+                    <form class="signup-form" enctype="multipart/form-data" method="post" novalidate="novalidate" onsubmit="_gaq.push(['_trackEvent', 'Goals','Interest Signup', 'Pre-Alpha']);" action="http://coachjeremy.wufoo.com/forms/z7x3p3/#public">
                         <fieldset>
                             <input type="text" value="" name="Field1" class="email span5" placeholder="Your Email Address" spellcheck="false" />
-                            <input type="hidden" id="idstamp" name="idstamp" value="17RpZKatW0e2JYeMrzZcG/mCuZEioxh7rPXFeva0x6E=">
-                            <button type="submit" name="saveForm" id="mc-embedded-subscribe" class="btn btn-large btn-warning">Notify me!</button>
+                            <input type="hidden" id="idstamp" name="idstamp" value="PaOkQ5H6AU8747bOpbrS7Ui6OSlwkJxkGaJeoPJwLvY=">
+                            <button type="submit" name="saveForm" id="mc-embedded-subscribe" class="btn btn-large btn-warning">Get started!</button>
+                                                        <br>
                                                     </fieldset>
                     </form>
                 </div>
@@ -236,10 +248,12 @@ description: Life and leadership coaching from coach-in-training Jeremy Blanchar
                             Eugene, Oregon
                         </p>
                     </section>
-                    <section class="span3">
-                        <h3>Thanks!</h3>
+                    <section class="span3 ">
+                        <p>&nbsp;</p>
                     </section>
                     <section class="span2 offset1 heart-container">
+                        <h3>Thanks!</h3>
+                        <div class="heart">&hearts;</div>
                     </section>
                             </div>
         </div>
