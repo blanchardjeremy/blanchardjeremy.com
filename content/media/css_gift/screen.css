@@ -1,0 +1,130 @@
+/**
+ * =============================== Structure ====
+ */
+.container {
+    width: 780px;
+}
+
+
+body {
+    padding: 0;
+    border: 0;
+}
+
+
+/**
+ * =============================== General Style ====
+ */
+
+
+h2, h3, .navbar .nav li a, .notify-link {
+    font-family: 'museo-slab', serif;
+}
+
+body, p, .box h3, span, .subheader {
+    font-family: 'proxima-nova', sans-serif
+}
+
+
+/**
+ * =============================== Specific Styles ====
+ */
+
+.navbar .brand {
+    font-family: 'museo-slab', serif;
+    color: black;
+}
+h2 {
+    text-shadow: 0 1px 1px white;
+    font-size: 44px;
+    line-height: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+h3 {
+    line-height: 1.2em;
+}
+
+.subheader {
+    font-weight: 400;
+    font-size: 2.2em;
+    letter-spacing: -1px;
+}
+
+.navbar_wrapper {
+    background-color: white;
+    /*border-bottom: 2px solid #ccc;*/
+    box-shadow: 0 -5px 30px #aaa;
+    -webkit-box-shadow: 0 -5px 30px #aaa;
+    -moz-box-shadow: 0 -5px 30px #aaa;
+}
+.navbar {
+    margin: 15px 0 10px 0;
+}
+
+.navbar-inner {
+    padding-left: 0;
+}
+.feature {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+span.amp {
+    font-family: "proxima-nova", sans-serif;
+}
+
+
+/**
+ * =============================== Footer ====
+ */
+
+footer {
+    background-color: #333;
+    color: #808080;
+    margin-top: 30px;
+    padding: 20px 0 20px 0;
+    min-height: 120px;
+    box-shadow: inset 0 20px 20px -20px #000;
+}
+footer h3 {
+    color: #808080;
+    text-shadow: 0 1px 1px black;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+footer a,
+footer a:hover,
+footer a:active,
+footer a:visited,
+footer a:link {
+    color: #fff;
+}
+footer p {
+    text-shadow: none;
+}
+footer .follow {
+    clear: both;
+}
+footer .follow li {
+    float: left;
+    /*margin-right: 10px;*/
+}
+footer .follow i {
+    font-size: 36px;
+    line-height: 1em;
+}
+footer .follow a:hover {
+    text-decoration: none;
+}
+footer .heart-container {
+    text-align: center;
+}
+footer .heart {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 100px;
+    line-height: 120px;
+    margin-top: -12px;
+}
