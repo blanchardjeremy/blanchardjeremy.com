@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Coaching Arena</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      #qualities ul li {
+          list-style: none;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <h1 class="muted">The Coaching Arena</h1>
+      </div>
+
+
+      <div>
+          <button class="btn btn-warning btn-small" id="clear_qualities">Reset Qualities</button>
+      </div>
+        <br><br>
+      <div id="qualities">
+        <ul>
+          <li><button class="btn" data-toggle="button" data-quality="alert">Alert</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="appreciative">Appreciative</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="attentive">Attentive</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="clear">Clear</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="compassionate">Compassionate</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="courageous">Courageous</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="creative">Creative</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="empowering">Empowering</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="enthusiastic">Enthusiastic</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="flexible">Flexible</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="focused">Focused</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="generous">Generous</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="gentle">Gentle</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="grateful">Grateful</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="joyous">Joyous</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="kind">Kind</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="loing">Loving</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="open">Open</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="present">Present</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="receptive">Receptive</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="supportive">Supportive</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="truthful">Truthful</button></li>
+          <li><button class="btn" data-toggle="button" data-quality="vulnerable">Vulnerable</button></li>
+        </ul>
+      </div>
+
+
+      <hr>
+
+      <div class="footer">
+        <p>Built with love by <a href="/">Life and Leadership Coach Jeremy Blanchard</a></p>
+        <p>The Coaching Arena is Copyright &copy; 2013 by The Academy for Coaching Excellence</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+      <script>
+        $(function() {
+
+          // Toggle qualities on click
+          $('#qualities li button').click(function(e) {
+            var $this = $(this);
+            $this.toggleClass('btn-primary');
+            saveQualities();
+          });
+
+          // Reset qualities when called
+          $('#clear_qualities').click(function(){
+              clearQualities();
+          });
+
+
+          function saveQualities() {
+            if (Modernizr.localstorage) {
+                // window.localStorage is available!
+                var activeQualities = [];
+                $('#qualities button.btn-primary').each(function(key, val) {
+                    activeQualities.push($(val).data('quality'));
+                });
+                window.localStorage['activeQualities'] = JSON.stringify(activeQualities);
+            } else {
+              // no native support for HTML5 storage :(
+            }
+          }
+
+
+          function loadQualities() {
+            if (Modernizr.localstorage) {
+                // window.localStorage is available!
+                var qualities = JSON.parse(window.localStorage['activeQualities']);
+                $.each(qualities, function(key, val) {
+                    $('#qualities li button[data-quality="'+val+'"]').addClass('active').addClass('btn-primary');
+                });
+            } else {
+              // no native support for HTML5 storage :(
+            }
+          }
+
+          function clearQualities() {
+              $('#qualities button').removeClass('active').removeClass('btn-primary');
+              window.localStorage['activeQualities'] = '';
+          }
+
+
+
+          // Load qualities from local storage on first page load
+          loadQualities();
+        });
+      </script>
+
+  </body>
+</html>
