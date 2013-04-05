@@ -51,11 +51,8 @@
       </div>
 
 
-      <div>
-          <button class="btn btn-warning btn-small" id="clear_qualities">Reset Qualities</button>
-      </div>
-        <br><br>
       <div id="qualities">
+        <h4>Qualities of Being <button class="btn btn-warning btn-small" id="clear_qualities">Reset</button></h4>
         <ul>
           <li><button class="btn" data-toggle="button" data-quality="alert">Alert</button></li>
           <li><button class="btn" data-toggle="button" data-quality="appreciative">Appreciative</button></li>
@@ -84,6 +81,17 @@
       </div>
 
 
+      <div id="questions">
+          <h4>Arena Questions</h4>
+          <ol>
+              <li>Who am I willing to be in order to produce an extraordinary result out of this interaction? (<span id="qualities_selected">None</span>)</li>
+              <li>Am I willing to systematically dismantle my structure of knowing?</li>
+              <li>Am I willing to be a demand for coaching?</li>
+              <li>Am I willing to guarantee that whoever coaches me will be successful?</li>
+          </ol>
+      </div>
+
+
       <hr>
 
       <div class="footer">
@@ -101,7 +109,7 @@
         $(function() {
 
           // Toggle qualities on click
-          $('#qualities li button').click(function(e) {
+          $('#qualities ul li button').click(function(e) {
             var $this = $(this);
             $this.toggleClass('btn-primary');
             saveQualities();
@@ -117,9 +125,12 @@
             if (Modernizr.localstorage) {
                 // window.localStorage is available!
                 var activeQualities = [];
-                $('#qualities button.btn-primary').each(function(key, val) {
+                var activeQualityNames = [];
+                $('#qualities ul li button.btn-primary').each(function(key, val) {
                     activeQualities.push($(val).data('quality'));
+                    activeQualityNames.push($(val).html());
                 });
+                $('#qualities_selected').html(activeQualityNames.join(', '));
                 window.localStorage['activeQualities'] = JSON.stringify(activeQualities);
             } else {
               // no native support for HTML5 storage :(
@@ -132,7 +143,7 @@
                 // window.localStorage is available!
                 var qualities = JSON.parse(window.localStorage['activeQualities']);
                 $.each(qualities, function(key, val) {
-                    $('#qualities li button[data-quality="'+val+'"]').addClass('active').addClass('btn-primary');
+                    $('#qualities ul li button[data-quality="'+val+'"]').addClass('active').addClass('btn-primary');
                 });
             } else {
               // no native support for HTML5 storage :(
@@ -140,7 +151,7 @@
           }
 
           function clearQualities() {
-              $('#qualities button').removeClass('active').removeClass('btn-primary');
+              $('#qualities ul li button').removeClass('active').removeClass('btn-primary');
               window.localStorage['activeQualities'] = '';
           }
 
