@@ -10,7 +10,7 @@
 
     <meta property="og:title" content="Complimentary Coaching Session" />
     <meta property="og:site_name" content="Jeremy Blanchard Coaching">
-    <meta property="og:description" content="Free coaching session for changemakers until April 30th!" />
+    <meta property="og:description" content="Free coaching session (until {{ new_date }}) for people making a difference in the world!" />
     <meta property="og:image" content="http://blanchardjeremy.com/media/img_gift/jeremy.jpg" />
     <meta property="og:site_name" content="Jeremy Blanchard Coaching">
     <meta property="og:type" content="activity">
@@ -139,8 +139,8 @@
                     <p>Stop with the struggle. Try coaching to bring your dreams and goals into reality with more focus and ease.</p>
                     <p>If you’re reading this, you’re entitled to a 60-minute coaching session from Life & Leadership Coach Jeremy Blanchard by phone or Skype, free of charge.</p>
                     <br>
-                    <p class="alert alert-error strike">Redeem by <strong>{{ old_date }}</strong> at midnight PST</p>
-                    <p class="alert alert-error">EXTENDED: Redeem by <strong>{{ new_date }}</strong>!</p>
+                    {% block old_date %}<p class="alert alert-error strike">Redeem by <strong>{{ old_date }}</strong> at midnight PST</p>{% endblock %}
+                    {% block new_date %}<p class="alert alert-error">{% block new_date_extended %}EXTENDED: {% endblock %}Redeem by <strong>{{ new_date }}</strong>!</p>{% endblock %}
                 </div>
             </div>
             <div class="span5">
