@@ -3,12 +3,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The Coaching Arena</title>
+    <title>Arena</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="apple-touch-icon-precomposed" href="{{ media_url('arena_app/icon-iphone.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ media_url('arena_app/icon-iphone-retina.png') }}">
@@ -109,10 +110,11 @@
       <script type="text/javascript">
 
 function loaded () {
-	if ( window.location.hash.match('returning') ) return;
+    var thehash = 'back'
+	if ( window.location.hash.match(thehash) ) return;
 
 	addToHome.show();
-	window.location.hash = '#returning';
+	window.location.hash = '#'+thehash;
 }
 
 window.addEventListener('load', loaded, false);
