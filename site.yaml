@@ -28,6 +28,7 @@ context:
         home_url: index.html
         old_date: "May 14th"
         new_date: "May 31st"
+        new_date_referrals: "June 15th"
 
         menu:
             - title: Blog
