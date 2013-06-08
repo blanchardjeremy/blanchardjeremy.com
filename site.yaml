@@ -26,9 +26,9 @@ context:
             url: "http://blanchardjeremy.com"
         google_analytics_id: UA-1854982-5
         home_url: index.html
-        old_date: "May 14th"
-        new_date: "May 31st"
-        new_date_referrals: "June 15th"
+        old_date: "June 5th"
+        new_date: "June 21st"
+        new_date_referrals: "June 21st"
 
         menu:
             - title: Blog
