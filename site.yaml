@@ -29,6 +29,7 @@ context:
         old_date: "June 5th"
         new_date: "June 21st"
         new_date_referrals: "June 21st"
+        new_date_hustle: "July 16th"
 
         menu:
             - title: Blog
