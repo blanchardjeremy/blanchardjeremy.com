@@ -11,7 +11,7 @@
     <meta property="og:title" content="Complimentary Coaching Session" />
     <meta property="og:site_name" content="Jeremy Blanchard Coaching">
     <meta property="og:description" content="Free coaching session (until {{ new_date }}) for people making a difference in the world!" />
-    <meta property="og:image" content="http://blanchardjeremy.com/media/img_gift/jeremy.jpg" />
+    <meta property="og:image" content="http://gravatar.com/avatar/d041d96ffc0a40b34cff3141860dd5dd?s=60" />
     <meta property="og:site_name" content="Jeremy Blanchard Coaching">
     <meta property="og:type" content="activity">
 
@@ -21,7 +21,15 @@
     <link href="{{ media_url('css_gift/producto.css') }}" rel="stylesheet">
     <link href="{{ media_url('css_gift/screen.css') }}" rel="stylesheet">
 
-        <style>
+    <style>
+
+    .hero-area .feature {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .hero-area .subheader {
+        margin-bottom: 0;
+    }
 
     .pitch p {
         font-size: 18px;
@@ -30,11 +38,17 @@
         text-align: left;
     }
     .pitch-wrapper {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .pitch-wrapper img {
         float: right;
-        width: 80%;
+        width: 65%;
+    }
+
+    .jeremy-photo-caption {
+        clear: both;
+        margin-left: 53%;
+        font-style: italic;
     }
 
     .signup-wrapper {
@@ -127,24 +141,24 @@
 
 
     <div class="container">
-        <div class="row">
+        <div class="row hero-area">
             <div class="feature span10">
-                <h2 class="motto">{% block pitch %}Do you want to live life with more <strong>ease</strong> and <strong>fullfilment</strong>?{% endblock %}</h2>
+                <h2 class="motto">{% block pitch %}Do you want to make change with more <strong>ease</strong> and less <strong>burnout</strong>?{% endblock %}</h2>
                 <h3 class="subheader">This is YOUR complimentary 60-minute coaching session</h3>
             </div>
         </div>
         <div class="row pitch-wrapper">
-            <div class="span5 center">
+            <div class="span6 center">
                 <div class="pitch">
-                    <p>Stop with the struggle. Try coaching to bring your dreams and goals into reality with more focus and ease.</p>
+                    <p>Stop with the struggle. With my support, you can bring your change-making dreams into reality with more ease and success!</p>
                     <p>If you’re reading this, you’re entitled to a 60-minute coaching session from Life & Leadership Coach Jeremy Blanchard by phone or Skype, free of charge.</p>
                     <br>
                     {% block new_date %}<p class="alert alert-error ">Redeem by <strong>{{ new_date }}</strong> at midnight PST</p>{% endblock %}
                 </div>
             </div>
-            <div class="span5">
-                <img src="{{ media_url('img_gift/jeremy.jpg') }}" class="thumbnail">
-                <p style="clear: both; margin-left: 15em; font-style: italic;">Hi, I'm Jeremy!</p>
+            <div class="span4">
+                <img src="http://gravatar.com/avatar/d041d96ffc0a40b34cff3141860dd5dd?s=200" class="thumbnail">
+                <p class="jeremy-photo-caption">Hi, I'm Jeremy!</p>
             </div>
         </div>
     </div>
@@ -207,7 +221,7 @@
                 <div class="row">
                     <article class="span8 offset1">
                         <h3>Who is Jeremy?</h3>
-                        <img src="http://gravatar.com/avatar/d041d96ffc0a40b34cff3141860dd5dd?s=200" class="thumbnail span2 pull-right">
+                        <img src="{{ media_url('img_gift/jeremy.jpg') }}" class="thumbnail span4 pull-right">
                         <p>I’m a Life & Leadership Coach. I work with you to help you discern your “voice of wisdom” from your doubt and fear conversations that are holding you back from taking action on the things that are most important to you.</p>
                         <p>As a changemaker, I was pouring all my time into too many projects, not producing the results I wanted, and not enjoying most parts of my life along the way. I kept thinking that if I just put in a bit more energy, I’d have the success I was looking for. Two years ago, I hired a coach and every session we had, each part of my life got easier. I became a trained coach myself so I can bring this powerful support to people who are doing meaningful work in the world.</p>
                         <p>I have extensive training from <a href="http://acecoachtraining.com/">The Academy for Coaching Excellence</a>, one of the best coach training programs in the country. While I’m in the process of finishing my coach certification, my rates are heavily discounted.</p>

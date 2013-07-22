@@ -1,0 +1,14 @@
+---
+title: Book a Meeting
+subtitle:
+description: Schedule a meeting with Jeremy Blanchard
+---
+
+{% extends "columns.j2" %}
+
+
+{% block content %}
+    <h1>Schedule a Meeting with Jeremy</h1>
+{% filter markdown -%}Please select at least 2 times that work for you for us to meet.{%- endfilter %}
+    <div align="center"><iframe src="http://www.meetme.so/JeremyBlanchardPersonal&dt=1&em=1" id="ScheduleOnceIframe"  scrolling="auto" frameborder="0" hspace="0" marginheight="0" marginwidth="0" height="1000px" width="754px" vspace="0" style="border-radius: 7px;-webkit-border-radius:7px;"></iframe></div><script type="text/javascript" src="http://535.staticso.com/mergedjs/ScheduleOnceEmbed.js"></script>
+{% endblock content %}
